@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginRegistrationController">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #f7c297;">
+         <left>
+            <VBox prefHeight="544.0" prefWidth="84.0" BorderPane.alignment="CENTER" />
+         </left>
+         <top>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="711.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="329.0" text="registration form " textFill="#f83737">
+                           <font>
+                              <Font name="Serif Regular" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="56.0" prefWidth="203.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#logOutButton" prefHeight="27.0" prefWidth="63.0" style="-fx-background-radius: 30; -fx-background-color: #e3818e;" text="log out " />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="563.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="616.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="USER NAME " textFill="#ad788c">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="name" prefHeight="28.0" prefWidth="341.0" style="-fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30; -fx-background-color: #d1b8f2;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="616.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="EMAIL " textFill="#ad788c">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="email" prefHeight="28.0" prefWidth="341.0" style="-fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30; -fx-background-color: #d1b8f2;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="45.0" prefWidth="616.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="PHONE " textFill="#ad788c">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="phone" prefHeight="28.0" prefWidth="344.0" style="-fx-background-radius: 30; -fx-border-color: black; -fx-border-radius: 30; -fx-background-color: #d1b8f2;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="100.0" prefHeight="45.0" prefWidth="616.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="BIRTH " textFill="#ad788c">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="dateofbirth" prefHeight="33.0" prefWidth="342.0" style="-fx-background-color: #d1b8f2;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="145.0" prefHeight="45.0" prefWidth="616.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="PASSWORD " textFill="#ad788c">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="password" prefHeight="28.0" prefWidth="344.0" style="-fx-background-color: #d1b8f2; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: black;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="190.0" prefHeight="45.0" prefWidth="616.0" spacing="30.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="110.0" text="confirm password" textFill="#ad788c">
+                           <font>
+                              <Font name="SansSerif Regular" size="16.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="confirmp" prefHeight="28.0" prefWidth="344.0" style="-fx-background-color: #d1b8f2; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: black;" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#RegisterMeButtonClicked" prefHeight="42.0" prefWidth="196.0" style="-fx-background-color: #0ced17; -fx-border-radius: 30; -fx-background-radius: 30; -fx-border-color: BLUE;" text="REGISTER " textFill="#657bc6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
