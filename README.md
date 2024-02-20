@@ -1,0 +1,1 @@
+this is a basic login system that needs a user to fill in the login to enter the system. if the user is not registered, the register button helps the user to register this details. the current project has no database so there is o storage of data.
